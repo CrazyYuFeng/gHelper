@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
-  base: '/',
+  base: '/gHelper/',
   plugins: [vue()],
   resolve: {
     alias: {
