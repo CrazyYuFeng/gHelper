@@ -42,8 +42,9 @@ import { useI18n } from '../locales'
 
 const { t } = useI18n()
 
-const wechatQr = ref('/pay/wechat.png')
-const alipayQr = ref('/pay/alipay.png')
+const base = import.meta.env.BASE_URL
+const wechatQr = ref(base + 'pay/wechat.png')
+const alipayQr = ref(base + 'pay/alipay.png')
 
 function onImgError(type) {
   if (type === 'wechat') wechatQr.value = ''
